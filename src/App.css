@@ -1,0 +1,248 @@
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  color: var(--Text-Dark---Neutral-900, #2B363C);
+  background: var(--High-Contrast-White, #FFF);
+}
+
+.button-close {
+  width: 100vw !important;
+  margin-bottom: 64px;
+  padding-right: 32px;
+  padding-top: 16px;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+
+  button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-right: 16px;
+  }
+
+  button {
+    color: var(--Neutral-900, #2b363c);
+  }
+
+  .agora-btn-link-primary svg {
+    fill: var(--Neutral-900, #2b363c);
+  }
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  
+  .modal-body {
+    max-width: 696px;
+    width: 100%;
+    background: var(--High-Contrast-White, #FFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.modal-header {
+  display: flex;
+  color: var(--Neutral-900, #2b363c);
+  display: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 32px;
+  }
+  
+  .modal-description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 8px;  
+  }
+
+  .modal-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+}
+
+.video-call-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 64px;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 32px;
+  }
+
+  .form-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    height: 90px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      height: 220px;
+    }
+
+    .form-input {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      gap: 16px;
+    }
+
+    .form-input--half {
+      width: 332px;
+      flex: 1 1 50%;
+      gap: 16px;
+    }
+  }
+}
+
+.agora-input-text-wrapper .agora-input-text {
+  background: var(--High-Contrast-White, #FFF);
+  margin-bottom: 32px;
+}
+
+.date-picker {
+  margin-bottom: 0;
+  width: 332px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  label {
+    margin-bottom: 0 !important;
+  }
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.agora-checkbox .label {
+  margin: 0px !important;
+}
+
+.button-submit {
+  flex-direction: row-reverse;
+  gap: 8px;
+}
+
+.agora-btn-with-icon .leading {
+  margin-right: 0 !important;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 128px;
+  gap: 32px;
+
+  @media screen and (max-width: 767px) {
+    justify-content: flex-end;
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+}
+
+
+// tela de retorno
+
+.pending-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--Neutral-900, #2b363c);
+  }
+
+  .agora-btn-link-primary svg {
+    fill: var(--Neutral-900, #2b363c);
+    padding-top: 2px;
+  }
+}
+
+.back-button {
+  gap: 8px;
+  margin-top: 64px;
+}
+
+.message {
+  max-width: 592px;
+  text-align: center;
+}
+
+.title {
+  color: #034AD8;
+  font-family: "Noto Sans";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-bottom: 48px;
+}
+
+.icon-feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center !important;
+  flex-direction: column;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.subtitle {
+  color: #2B363C;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
